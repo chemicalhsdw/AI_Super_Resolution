@@ -60,7 +60,7 @@ if __name__ == '__main__':
     #             img_path = fr"{cls_path}\{image_file}"
     #             # 使用OpenCV读取图像
     #             frame = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)  # 假设图像是灰度图
-    #             '''别问为什么，不加这行会出现写入文件失败'''
+    #             '''需要将写入文件的帧变为3通道，否则会出现写入文件失败（且没有报错）'''
     #             frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
     #             # 超分辨率处理
     #             # time1 = time.time()
